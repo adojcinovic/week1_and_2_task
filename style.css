@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.frame {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.top_img {
+    position: absolute;
+    top: 50vh;
+    left: 50vw; 
+
+}
+.bottom_img {
+    position: absolute;
+    bottom: 50vh;
+    right: 50vw;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    width: 400px;
+    height: 430px;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.top {
+    height: 40%;
+    width: 100%;
+    background-image: url(./images/bg-pattern-card.svg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.mid {
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.bottom {
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    border-top: solid rgb(197, 194, 194) 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.profile_pic {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    border: white 5px solid;
+    border-radius: 50%;
+}
+.wrapper {
+    position: absolute;
+    bottom: 40px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+}
+.info {
+    margin-bottom: 30px;
+}
+.name {
+    font-weight: bolder;
+}
+.age {
+    color: gray;
+    margin-left: 5px;
+}
+
+.font400 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: gray;
+}
+.font700 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+@media all and (max-width: 375px) {
+
+
+    .background .top_img {
+        top: -483px;
+        left: -684px;
+    }
+    
+    .background .bottom_img {
+        bottom: -503px;
+        right: -652px;
+       
+    }
+}
